@@ -17,7 +17,7 @@ InspectDebuggerDebugAction class >> gtActionFor: aDebugger [
 	<gtStackDebuggingAction>
 
 	^ (self forDebugger: aDebugger)
-			order: 35
+			order: 60
 ]
 
 { #category : #accessing }
@@ -27,7 +27,7 @@ InspectDebuggerDebugAction >> defaultLabel [
 
 { #category : #accessing }
 InspectDebuggerDebugAction >> defaultOrder [
-	^ 110
+	^ 130
 ]
 
 { #category : #accessing }
