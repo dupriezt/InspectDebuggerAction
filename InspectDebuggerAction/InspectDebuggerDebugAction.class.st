@@ -12,6 +12,14 @@ InspectDebuggerDebugAction class >> actionType [
 	<contextMenuDebuggingAction>
 ]
 
+{ #category : #registration }
+InspectDebuggerDebugAction class >> gtActionFor: aDebugger [
+	<gtStackDebuggingAction>
+
+	^ (self forDebugger: aDebugger)
+			order: 35
+]
+
 { #category : #accessing }
 InspectDebuggerDebugAction >> defaultLabel [
 	^ 'Inspect debugger'
