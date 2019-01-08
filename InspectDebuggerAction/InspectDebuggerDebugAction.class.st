@@ -1,3 +1,6 @@
+"
+An InspectDebuggerDebugAction opens an inspector on the underlying debugger object
+"
 Class {
 	#name : #InspectDebuggerDebugAction,
 	#superclass : #DebugAction,
@@ -7,14 +10,6 @@ Class {
 { #category : #registration }
 InspectDebuggerDebugAction class >> actionType [
 	<contextMenuDebuggingAction>
-]
-
-{ #category : #registration }
-InspectDebuggerDebugAction class >> gtActionFor: aDebugger [
-	<gtStackDebuggingAction>
-	
-	^ (self forDebugger: aDebugger)
-			order: 35
 ]
 
 { #category : #accessing }
